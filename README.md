@@ -45,6 +45,7 @@ In your `iex` session you should see output like:
 
 When setting up the SSE connection, we created channel "sample".
 
+In a separate terminal window run:
 ```
 curl -X POST -H "Content-Type: application/json" -u "<your_dev_api_key>" -d @large_publish.json https://rest.ably.io/channels/sample/messages
 ```
