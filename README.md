@@ -11,6 +11,8 @@ Sample code for connecting to an [Ably Channel using SSE](https://ably.com/docum
 
 ## Reproducing dropped connection
 
+For this section, it's assumed that you have a dev setup in Ably and have your dev API key.
+
 ### Setup Finch SSE connection
 
 Run: `iex -S mix`
