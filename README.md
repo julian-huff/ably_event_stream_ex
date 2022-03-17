@@ -7,7 +7,9 @@ Sample code for connecting to an [Ably Channel using SSE](https://ably.com/docum
 
 1. Install [asdf](http://asdf-vm.com/guide/getting-started.html#_1-install-dependencies).
 2. `asdf install`
-3. `mix deps.get`
+3. `asdf local erlang 24.2.1`
+4. `asdf local elixir 1.13.2-otp-24`
+5. `mix deps.get`
 
 ## Reproducing dropped connection
 
