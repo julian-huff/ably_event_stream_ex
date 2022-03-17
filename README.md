@@ -5,11 +5,7 @@ Sample code for connecting to an [Ably Channel using SSE](https://ably.com/docum
 
 ## Installation
 
-1. Install [asdf](http://asdf-vm.com/guide/getting-started.html#_1-install-dependencies).
-2. `asdf install`
-3. `asdf local erlang 24.2.1`
-4. `asdf local elixir 1.13.2-otp-24`
-5. `mix deps.get`
+1. `docker build -t ably_event_stream:latest .`
 
 ## Reproducing dropped connection
 
@@ -17,8 +13,9 @@ For this section, it's assumed that you have a dev setup in Ably and have your d
 
 ### Setup Finch SSE connection
 
-Run: `iex -S mix`
+Run: `docker run -it able_event_stream:latest`
 
+Once attached to your container run:
 ```
 AblyEventStream.Connection.connect("your_dev_api_key")
 ```
