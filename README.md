@@ -5,7 +5,11 @@ Sample code for connecting to an [Ably Channel using SSE](https://ably.com/docum
 
 ## Installation
 
-1. `docker build -t ably_event_stream:latest .`
+`docker build -t julianatthescore/ably_event_stream:latest .`
+
+or
+
+`docker pull julianatthescore/ably_event_stream:latest`
 
 ## Reproducing dropped connection
 
@@ -13,7 +17,7 @@ For this section, it's assumed that you have a dev setup in Ably and have your d
 
 ### Setup Finch SSE connection
 
-Run: `docker run -it able_event_stream:latest`
+Run: `docker run -it julianatthescore/ably_event_stream:latest`
 
 Once attached to your container run:
 ```
