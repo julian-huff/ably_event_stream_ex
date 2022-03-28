@@ -22,7 +22,8 @@ defmodule AblyEventStream.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:finch, "~> 0.8"}
+      {:finch, "~> 0.8", path: "local_deps/finch"},
+      {:mint, "~> 1.3", path: "local_deps/mint", override: true}
     ]
   end
 end
